@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webb", "Webb\Webb.csproj", "{62AD3A83-3DFE-409B-B2B2-00D81A619E5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62AD3A83-3DFE-409B-B2B2-00D81A619E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AD3A83-3DFE-409B-B2B2-00D81A619E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AD3A83-3DFE-409B-B2B2-00D81A619E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AD3A83-3DFE-409B-B2B2-00D81A619E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D28B1373-2CEF-4E95-B9CE-AA6F8C78541C}
+	EndGlobalSection
+EndGlobal

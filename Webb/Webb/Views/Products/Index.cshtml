@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Webb.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Products</h2>
+
+
+    <br>
+    <a href="@Url.Action("Create", "Products")" class="btn btn-info">
+        <i class='fa fa-edit'></i>Create New
+    </a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductImage)
+            </th>
+            <th> 
+                
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductImage)
+                    <!--<form asp-action="RetrieveImage"
+                          asp-controller="Home"
+                          method="post">
+                       
+                        <button type="submit" , class="btn-default">Show Latest Image</button>
+                    </form>-->
+                </td>
+                <td>
+                    
+                    <a href="@Url.Action("Edit", "Products", new { id = item.ProductID })" class="btn btn-info">
+                        <i class='fa fa-edit'></i>Edit
+                    </a> |
+                    <a href="@Url.Action("Details", "Products", new { id = item.ProductID })" class="btn btn-info">
+                        <i class='fa fa-edit'></i>Details
+                    </a> |
+                    <a href="@Url.Action("Delete", "Products", new { id = item.ProductID })" class="btn btn-danger">
+                        <i class='fa fa-edit'></i>Delete
+                    </a>
+
+                </td>
+            </tr>
+        }
+       
+    </tbody>
+</table>
